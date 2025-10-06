@@ -156,11 +156,18 @@ footer {
   margin-bottom: 6px;
 }
 
+
 .participants-list {
-  list-style-type: disc;
-  margin-left: 22px;
+  list-style-type: none;
+  margin-left: 0;
   margin-bottom: 0;
   padding-left: 0;
+}
+
+.no-bullets {
+  list-style-type: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
 }
 
 .participant-item {
@@ -168,6 +175,20 @@ footer {
   font-size: 15px;
   margin-bottom: 2px;
   word-break: break-all;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-participant {
+  color: #c62828;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+.delete-participant:hover {
+  color: #a31515;
 }
 
 .no-participants {
